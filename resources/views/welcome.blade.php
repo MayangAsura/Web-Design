@@ -69,8 +69,9 @@
         </style>
     </head>
     <body>
-    <div class="container">
-        <nav class="navbar navbar-expand-sm bg-light navbar-light">
+    
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+        <div class="container">
             <div class="flex-center position-ref full-height" > 
                     @if (Route::has('login'))
                         <div class="top-right links">
@@ -85,12 +86,12 @@
                             @endauth
                         </div>
                     @endif
-            
-
+            </div>
+        </div>
+    </nav>
                 <div class="content">
                     
                 </div>
-        </nav>
 
         </div>
   
