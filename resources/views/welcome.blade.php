@@ -10,6 +10,7 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
         <!-- Styles -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <style>
             html, body {
                 background-image: url('/image/sampul.jpg');
@@ -71,17 +72,23 @@
     <body>
     
     <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+        <a class="navbar-brand" href="#">BasicLaboratory</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
         <div class="container">
             <div class="flex-center position-ref full-height" > 
                     @if (Route::has('login'))
                         <div class="top-right links">
                             @auth
-                                <a href="{{ url('/home') }}">Home</a>
+                                <a class="nav-item nav-link active" href="{{ url('/home') }}">Home</a>
                             @else
-                                <a href="{{ route('login') }}">Login</a>
+                                <a class="nav-item nav-link" href="{{ route('login') }}">Login</a>
 
                                 @if (Route::has('register'))
-                                    <a href="{{ route('register') }}">Register</a>
+                                    <a class="nav-item nav-link" href="{{ route('register') }}">Register</a>
                                 @endif
                             @endauth
                         </div>
@@ -89,9 +96,17 @@
             </div>
         </div>
     </nav>
-                <div class="content">
-                    
-                </div>
+    <div class="content">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+            </div>
+        </div>
+    </div>
 
         </div>
   
