@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                        Mayang Asura BULOG
+                        coba dulu aja
                     </div>
 
                 <div class="links">
