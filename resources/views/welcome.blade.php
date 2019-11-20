@@ -76,10 +76,8 @@
     <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
     <div class="container">
         <a class="navbar-brand" href="#"><b>BasicLaboratory</b></a>
-        
- 
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup" >
-                <div class="navbar-nav" style="float:right;">
+                <div class="navbar-nav">
                     @if (Route::has('login'))
                         <div class="top-right links">
                             @auth   
