@@ -72,14 +72,13 @@
     <body>
     
     <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+    <div class="container">
         <a class="navbar-brand" href="#">BasicLaboratory</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-        <div class="container">
-            <div class="flex-center position-ref full-height" > 
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
                     @if (Route::has('login'))
                         <div class="top-right links">
                             @auth
@@ -93,9 +92,11 @@
                             @endauth
                         </div>
                     @endif
+                </div>
             </div>
         </div>
     </nav>
+
     <div class="content">
         <div class="card" style="width: 18rem;">
             <div class="card-body">
