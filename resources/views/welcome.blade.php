@@ -16,7 +16,7 @@
                 background-image: url('/image/sampul.jpg');
                 background-repeat: no-repeat;
                 background-attachment: fixed;
-                background-size: 80% 100%;
+                background-size: 100%;
                 background-position: center; 
                 background-color: #fff;
                 color: #636b6f;
@@ -25,7 +25,9 @@
                 height: 100vh;
                 margin: 0;
             }
-
+            card{
+                position: right; 
+            }
             .full-height {
                 height: 100vh;
             }
@@ -98,13 +100,15 @@
     </nav>
 
     <div class="content">
-        <div class="card" style="width: 18rem;">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
+        <div class="container">
+            <div class="card right" style="width: 18rem;" >
+                <div class="card-body">
+                    <h5 class="card-title">Jumlah Asisten</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                    <p class="card-text">20</p>
+                    <a href="#" class="card-link">Open</a>
+                    <a href="#" class="card-link">Edit</a>
+                </div>
             </div>
         </div>
     </div>
