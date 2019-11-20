@@ -103,7 +103,9 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    
+                    <h1>SELAMAT DATANG DI</h1><br>
+                    <h1>L A B O R A T O R I U M</h1><br>
+                    <h1>KOMPUTER DASAR</h1>
                 </div>
                 <div class="col">
                     <div class="card right" style="width: 18rem;" >
