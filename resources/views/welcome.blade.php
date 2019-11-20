@@ -75,19 +75,18 @@
     
     <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
     <div class="container">
-        <a class="navbar-brand" href="#">BasicLaboratory</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
+        <a class="navbar-brand" href="#"><b>BasicLaboratory</b></a>
+        
+ 
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup" >
+                <div class="navbar-nav" style="float:right;">
                     @if (Route::has('login'))
                         <div class="top-right links">
-                            @auth
+                            @auth   
                                 <a class="nav-item nav-link active" href="{{ url('/home') }}">Home</a>
                             @else
                                 <a class="nav-item nav-link" href="{{ route('login') }}">Login</a>
-
+                            
                                 @if (Route::has('register'))
                                     <a class="nav-item nav-link" href="{{ route('register') }}">Register</a>
                                 @endif
@@ -96,16 +95,18 @@
                     @endif
                 </div>
             </div>
+ 
         </div>
     </nav>
 
     <div class="content">
         <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col-md-5">
+                    <br><br><br><br><br>
                     <h1>SELAMAT DATANG DI</h1><br>
-                    <h1>L A B O R A T O R I U M</h1><br>
-                    <h1>KOMPUTER DASAR</h1>
+                    <h1><b> L A B O R A T O R I U M</b></h1><br>
+                    <h1></b>KOMPUTER DASAR</b></h1>
                 </div>
                 <div class="col">
                     <div class="card right" style="width: 18rem;" >
@@ -119,6 +120,8 @@
                     </div>
                 </div>
             </div>
+            
+
         </div>
     </div>
 
