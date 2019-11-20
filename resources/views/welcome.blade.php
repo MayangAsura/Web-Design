@@ -25,7 +25,7 @@
                 height: 100vh;
                 margin: 0;
             }
-            card{
+            .card{
                 position: right; 
             }
             .full-height {
@@ -101,13 +101,20 @@
 
     <div class="content">
         <div class="container">
-            <div class="card right" style="width: 18rem;" >
-                <div class="card-body">
-                    <h5 class="card-title">Jumlah Asisten</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                    <p class="card-text">20</p>
-                    <a href="#" class="card-link">Open</a>
-                    <a href="#" class="card-link">Edit</a>
+            <div class="row">
+                <div class="col">
+                    
+                </div>
+                <div class="col">
+                    <div class="card right" style="width: 18rem;" >
+                        <div class="card-body">
+                            <h5 class="card-title">Jumlah Asisten</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <p class="card-text">20</p>
+                            <a href="#" class="card-link">Open</a>
+                            <a href="#" class="card-link">Edit</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
